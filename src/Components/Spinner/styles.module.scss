@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.wrappedSpinner {
+  align-items: center;
+  background-color: rgba($color: $black, $alpha: .5);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  min-height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  z-index: 1000000000;
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+  border: 16px solid $light-text;
+  border-radius: 50%;
+  border-top: 16px solid $tertiary-color;
+  height: 120px;
+  width: 120px;
+}
+
+@keyframes spin {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(360deg); }
+}

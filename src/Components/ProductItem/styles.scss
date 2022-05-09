@@ -1,0 +1,51 @@
+@import "../../Styles/variables.scss";
+
+.walmart-product-item {
+  align-items: center;
+  background-color: $light-gray;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 300px;
+
+  &__info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  &__price-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 15px;
+  }
+
+  &__discount {
+    align-items: center;
+    background-color: green;
+    border-radius: 20px;
+    color: $white;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    justify-content: center;
+    padding: 6px;
+    width: auto;
+  }
+
+  &__old-price {
+    color: $gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+}

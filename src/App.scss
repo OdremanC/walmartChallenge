@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import "./Styles/variables.scss";
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App__results {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.content {
+  background-color: $light-gray;
+  width: 100%;
+}

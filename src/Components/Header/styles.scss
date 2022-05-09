@@ -1,0 +1,10 @@
+@import "../../Styles/variables.scss";
+
+.walmart-header {
+  align-items: center;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 10px;
+  width: 100%;
+}
