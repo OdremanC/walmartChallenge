@@ -13,7 +13,6 @@
 
   [![react](https://img.shields.io/badge/-ReactJS-blue?logo=react)][react]
   [![node](https://img.shields.io/badge/-NodeJS-green?logo=Node.js)][node]
-  [![typescript](https://img.shields.io/badge/-TypeScript-9cf?logo=typescript)][typescript]
   [![javascript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript)][Javascript]
   <br>
 
