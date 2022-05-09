@@ -26,7 +26,7 @@ const ProductItem = ({
         <div className='walmart-product-item__price-container'>
           <span className='walmart-product-item__price'>${formatedPrice}</span>
           {discount && (
-            <span className='walmart-product-item__discount'>{discount}</span>
+            <span className='walmart-product-item__discount'>{discount} OFF</span>
           )}
         </div>
         {newPrice && (

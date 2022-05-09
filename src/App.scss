@@ -4,6 +4,7 @@
 
 html,
 body {
+  background-color: $light-gray;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   margin: 0;
@@ -20,14 +21,17 @@ a {
   box-sizing: border-box;
 }
 
-.App__results {
-  font-size: 17px;
-  font-weight: bold;
-  padding: 15px;
+.App {
+  background-color: $light-gray;
+
+  &__results {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+  }
 }
 
 .content {
-  background-color: $light-gray;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
