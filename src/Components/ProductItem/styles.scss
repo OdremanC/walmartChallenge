@@ -16,6 +16,19 @@
     width: 100%;
   }
 
+  &__img {
+    height: 300px;
+    padding: 10px;
+    width: 300px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      padding: 5px;
+      width: 100%;
+    }
+  }
+
   &__price-container {
     align-items: center;
     display: flex;
