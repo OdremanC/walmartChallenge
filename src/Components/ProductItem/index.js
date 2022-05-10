@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Card from '../Card';
 import { currencyFormatter } from '../../Utils/serializer';
@@ -35,6 +36,21 @@ const ProductItem = ({
       </div>
     </Card>
   );
+};
+
+ProductItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  brand: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  discount: PropTypes.string,
+  newPrice: PropTypes.number,
 }
+
+ProductItem.defaultProps = {
+  discount: '',
+  newPrice: null,
+};
 
 export default ProductItem;

@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 import SearchLupIcon from '../../Assets/searchLup.svg';
 
@@ -13,7 +14,7 @@ const InputSearch = ({
   searchData,
   onBlur,
   error,
-  disabled = false,
+  disabled,
 }) => {
   const handleChange = (event) => {
     const {
@@ -54,6 +55,27 @@ const InputSearch = ({
       </span>
     </div>
   );
+};
+
+InputSearch.propTypes = {
+  value: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  searchData: PropTypes.func,
+  onBlur: PropTypes.func,
+  error: PropTypes.bool,
+  disabled: PropTypes.bool,
+}
+
+InputSearch.defaultProps = {
+  value: '',
+  label: '',
+  placeholder: '',
+  searchData: () => {},
+  onBlur: () => {},
+  error: false,
+  disabled: false,
 };
 
 export default InputSearch;
